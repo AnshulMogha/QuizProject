@@ -1,0 +1,28 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #ffeeee;
+}
+
+html {
+    font-size: 2vw;
+}
+#container-1
+{
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(to right, #FEDB39, #D61C4E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    padding: 3rem;
+    font-size: 1em;
+    border-radius: 30px;
+    background-color: #393E46;
+    box-shadow: 0px 0px 20px #000000;
+    border: solid #1CD6CE;
+}

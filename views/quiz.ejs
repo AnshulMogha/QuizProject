@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/Quiz/quiz.css">
+    
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div id="main-c" class="container">
+        <header id="header-c" class="container">
+            <div id="h-sec2">
+                <p class="attempts" id="undone"><i class="fa-solid fa-circle-xmark"></i> Remaining :<span id="remain-Que">10</span></p>
+            </div>
+        </header>
+        <div id="content-c" class="container">
+            <div id="quiz-body">
+                <div id="c-sec1">
+                    <div id="btn-grp">
+                        <input class="q-btn" id="1" type="button" value="1">
+                        <input class="q-btn" id="2" type="button" value="2">
+                        <input class="q-btn" id="3" type="button" value="3">
+                        <input class="q-btn" id="4" type="button" value="4">
+                        <input class="q-btn" id="5" type="button" value="5">
+                        <input class="q-btn" id="6" type="button" value="6">
+                        <input class="q-btn" id="7" type="button" value="7">
+                        <input class="q-btn" id="8" type="button" value="8">
+                        <input class="q-btn" id="9" type="button" value="9">
+                        <input class="q-btn" id="10" type="button" value="10">
+                    </div>
+                </div>
+                <div id="c-sec2">
+                    <div>
+                        <h5 id="q-ques">Q.<span id="ques-no"><%=QuestionNo%></span>&nbsp;<%=Question%></h5>
+                        <ul id="f-radio">
+                            <li class="option">
+                                <input id="r1" class="radio-btn" type="radio" name="answer" value="1">
+                                <label class="f-lbl" for="r1">a)&nbsp;<%=Option1%></label>
+                            </li>
+                            <li class="option">
+                                <input id="r2" class="radio-btn" type="radio" name="answer" value="2">
+                                <label class="f-lbl" for="r2">b)&nbsp;<%=Option2%></label>
+                            </li>
+                            <li class="option">
+                                <input id="r3" class="radio-btn" type="radio" name="answer" value="3">
+                                <label class="f-lbl" for="r3">c)&nbsp;<%=Option3%></label>
+                            </li>
+                            <li class="option">
+                                <input id="r4" class="radio-btn" type="radio" name="answer" value="4">
+                                <label class="f-lbl" for="r4">d)&nbsp;<%=Option4%></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="/quiz" id="hidden-form" method="post">
+                        <input id="hidden-val1" type="hidden"  value=<%=Key%>>
+                        <input type="hidden" name="Qid" value=<%=Qid%>>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer id="footer-c" class="container">
+            <div id="f-sec2"><input id="nextBtn"class="f-btn" id="move_n" type="button" value="Next"></div>
+        </footer>
+    </div>
+    <script defer src="/Quiz/quiz.js"></script>
+</body>
+
+</html>

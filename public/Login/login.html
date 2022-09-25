@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Login/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="main-container">
+        <div class="container"  id="container-1">
+            <button class="btn" id="SignInbtn">SignIn</button>
+            <button class="btn" id="SignUpbtn">SignUp</button>
+        </div>
+        <div class="container" id="container-2">
+            <h1 id="caption">SignIn</h1>
+            <form action="/" method="post">
+                <label for="EmailID">Email ID:</label>
+                <input type="email" name="userEmail" id="EmailID" required autofocus>
+                <label for="Password">Password:</label>
+                <input type="password" name="userPassword" id="Password" required>
+                <button type="submit" class="btn" id="Submitbtn" name="submitBtn" value="SignIn">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script src="Login/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+:root {
+    --yellow: #FEDB39;
+    --white: #F4EEFF;
+    --blue: #1CD6CE;
+    --red: #D61C4E;
+    --lb: #393E46;
+    --b: #222831;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: var(--white);
+}
+
+html {
+    font-size: 2vw;
+    border-radius: 2vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+i {
+    color: var(--blue);
+}
+
+#main-c {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--yellow), var(--red));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#header-c {
+    height: 20%;
+    background-color: var(--lb);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+#h-sec2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.attempts {
+    color: var(--blue);
+    margin: auto;
+    font-size: .8rem;
+}
+
+#content-c {
+    height: 60%;
+    width: 100%;
+}
+
+#quiz-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#c-sec1 {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--b);
+}
+
+#btn-grp {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lb);
+}
+
+.q-btn {
+    height: 15%;
+    width: 40%;
+    background-color: var(--b);
+    margin: auto;
+    font-size: .6rem;
+}
+
+#c-sec2 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+}
+
+.f-lbl {
+    font-size: .8rem;
+}
+
+#footer-c {
+    height: 20%;
+    background-color: var(--lb);
+    display: flex;
+    flex-direction: row;
+}
+
+#f-sec1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#f-sec2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#q-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.f-btn {
+    width: 20%;
+    height: 20%;
+    background-color: var(--b);
+    font-size: .5rem;
+}
+
+@media screen and (min-width:0px) and (max-width:575px) {
+    html {
+        font-size: 5vw;
+    }
+
+    #quiz-body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #c-sec1 {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--b);
+    }
+
+    #c-sec2 {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: auto;
+    }
+
+    #btn-grp {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
+        background-color: var(--lb);
+    }
+
+    .q-btn {
+        height: 30%;
+        width: 20%;
+        background-color: var(--b);
+        margin: auto;
+        font-size: .6rem;
+    }
+
+    #main-c {
+        height: 100vh;
+        background-image: linear-gradient(to bottom, var(--yellow), var(--red));
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #header-c {
+        height: 10%;
+        background-color: var(--lb);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #footer-c {
+        height: 10%;
+        background-color: var(--lb);
+        display: flex;
+        flex-direction: row;
+    }
+
+    #content-c {
+        height: 80%;
+        width: 100%;
+    }
+
+    .f-btn {
+        width: 50%;
+        height: 50%;
+        background-color: var(--b);
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    html {
+        font-size: 4vw;
+    }
+
+    #quiz-body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #c-sec1 {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--b);
+    }
+
+    #c-sec2 {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: auto;
+    }
+
+    #btn-grp {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
+        background-color: var(--lb);
+    }
+
+    .q-btn {
+        height: 30%;
+        width: 20%;
+        background-color: var(--b);
+        margin: auto;
+        font-size: .6rem;
+    }
+
+    #main-c {
+        height: 100vh;
+        background-image: linear-gradient(to bottom, var(--yellow), var(--red));
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #header-c {
+        height: 10%;
+        background-color: var(--lb);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #footer-c {
+        height: 10%;
+        background-color: var(--lb);
+        display: flex;
+        flex-direction: row;
+    }
+
+    #content-c {
+        height: 80%;
+        width: 100%;
+    }
+
+    .f-btn {
+        width: 50%;
+        height: 50%;
+        background-color: var(--b);
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    html {
+        font-size: 3vw;
+    }
+
+    #quiz-body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #c-sec1 {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--b);
+    }
+
+    #c-sec2 {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: auto;
+    }
+
+    #btn-grp {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
+        background-color: var(--lb);
+    }
+
+    .q-btn {
+        height: 30%;
+        width: 20%;
+        background-color: var(--b);
+        margin: auto;
+        font-size: .6rem;
+    }
+
+    #main-c {
+        height: 100vh;
+        background-image: linear-gradient(to bottom, var(--yellow), var(--red));
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #header-c {
+        height: 10%;
+        background-color: var(--lb);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #footer-c {
+        height: 10%;
+        background-color: var(--lb);
+        display: flex;
+        flex-direction: row;
+    }
+
+    #content-c {
+        height: 80%;
+        width: 100%;
+    }
+
+    .f-btn {
+        width: 50%;
+        height: 50%;
+        background-color: var(--b);
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    html {
+        font-size: 2.5vw;
+    }
+
+    .f-btn {
+        width: 50%;
+        height: 50%;
+        background-color: var(--b);
+        font-size: .8rem;
+    }
+}

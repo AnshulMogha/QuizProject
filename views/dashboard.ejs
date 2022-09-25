@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="Dashboard/dashboard.css">
+    
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="main-c" class="container">
+        <aside id="side-bar" class="container">
+            <div id="section-1">
+                <div id="userInfo">
+                    <div id="profile-pic-i" class="fa-solid fa-user"></div>
+                    <p id="username"><%=userName%></p>
+                </div>
+                <a id="myquiz" class="option-pick btn">&emsp;<i id="quiz-i" class="fa-solid fa-pen"></i> My
+                    Quiz</a>
+                <a id="myscore" class="option-pick btn">&emsp;<i id="score-i" class="fa-solid fa-trophy"></i> My
+                    score</a>
+            </div>
+            <div id="section-2">
+                <a id="logout" href="/"><i id="logout-i" class="fa-solid fa-right-from-bracket"></i>
+                    Logout</a>
+            </div>
+        </aside>
+        <div id="content-container" class="container">
+            <form id="quiz-form" class="container" action="/quiz" method="post" target="_blank">
+                <h2 id="form-heading" class="form-item">Start The Quiz</h2>
+                <input class="form-item" id="form-btn" type="submit" name="btn" value="start">
+                <h4 style="display:none" id="show-score">Your Highscore Is : </h4>
+                <p style="display:none" id="digit"><%=highScore%></p>
+            </form>
+        </div>
+    </div>
+    <script defer src="Dashboard/dashboard.js"></script>
+</body>
+
+</html>
