@@ -69,7 +69,7 @@ function authenticate(email,password,res)
 
 /*--------------------------------------------------------------------------- */
 app.get('/',(req,res)=>{
-    res.redirect("/LoginSignup");    
+    res.sendFile(__dirname+ "/index.html");    
 });
 app.get('/LoginSignup',(req,res)=>{
     res.sendFile(__dirname+"/public/Login/login.html")
